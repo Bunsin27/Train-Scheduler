@@ -1,0 +1,31 @@
+body {
+    background-image: url(takenfromdizorbcom-1572835792074-4314.jpg);
+    /* background-size: inherit; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card {
+    font-weight: bold;
+    background-color: rgb(209, 209, 209);
+}
+
+.jumbotron {
+    background: rgba(0, 0, 0, 0.63);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h1 {
+    font-size: 80px;
+    font-weight: bolder;
+    color: rgb(121, 24, 24);
+
+}
+
+.card-header {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+    padding-top: 15px;
+
+}

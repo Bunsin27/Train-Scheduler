@@ -1,0 +1,107 @@
+<html lang="eng-us">
+
+<head>
+    <meta="uft-8">
+        <title>FINAL DESTINATION</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+        <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+        <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+
+    <div id="modal" class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Train Save</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p></p>
+                </div>
+                <div class="modal-footer">
+                    <button id="save_button" type="button" class="btn btn-primary">Save changes</button>
+                    <button id="cancel" type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="jumbotron">
+            <h1 class="text-center"><strong>Trains are not any safer than flying</strong></h1>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="card">
+                    <div class="panel panel-default">
+                        <!-- train image -->
+                        <h5>Train Schedule</h5>
+                    </div>
+                    <table class="table" id="trainTable">
+                        <thead class="thead-default">
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Train Name</th>
+                                <th scope="col">Destination</th>
+                                <th scope="col">First Train Arrival Time</th>
+                                <th scope="col">Frequency (min)</th>
+                                <th scope="col">Next Train Arrival Time</th>
+                                <th scope="col">Arriving In (min)</th>
+                            </tr>
+                        </thead>
+                        <tbody class="tableBody">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="card">
+                    <div class="card-heading">
+                        <h5>Add Train</h5>
+                    </div>
+                    <div class="card-body">
+                        <form role="form" id="form-input">
+                            <div class="form-group row">
+                                <label for="train-input">Train Name:</label>
+                                <input class="form-control" id="train-input" type="text">
+                            </div>
+                            <div class="form-group row">
+                                <label for="destination-input">Destination:</label>
+                                <input class="form-control" id="destination-input" type="text">
+                            </div>
+                            <div class="form-group row">
+                                <label for="time-input">First Train Arrival Time (HH:mm military time):</label>
+                                <input class="form-control" id="time-input" type="text">
+                            </div>
+                            <div class="form-group row">
+                                <label for="frequency-input">Frequency (min)</label>
+                                <input class="form-control" id="frequency-input" type="text">
+                            </div>
+                            <button type="submit" class=".btn-danger" id="add-train">Add The Train</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    </script>
+    <script src="assets/logic.js"></script>
+</body>
+
+</html>
